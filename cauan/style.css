@@ -1,0 +1,150 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header>section{
+    height: 60vh;
+    width: 100%;
+    background-image: url('imagens/backgroundhead.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1 li{
+    opacity: 0;
+    color: black;
+    padding-top: 20px;
+}
+h1:hover li{
+    opacity: 1;
+    color: rgb(241, 241, 241);
+    transition: opacity 1s,color 3s;
+    
+    
+}
+header h1:hover{
+    color: black;
+    transition-duration: 1s;
+}
+h1{
+    font-size: 7vw;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+    text-align: center;
+    padding-top: 100px;
+}
+main{
+    box-shadow: 0px 0px 10px black;
+}
+h2{
+    padding: 10px;
+    font-size: 5vw;
+}
+p{
+    padding: 10px;
+    line-height: 2em;
+}
+main img{
+    margin:auto;
+    display: block;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow:1px 1px 10px black;
+}
+form{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+}
+.sd{
+    margin: 10px;
+    border: 1px solid black;
+}
+#saida{
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    background-color: grey;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+    border: solid black 1px ;
+    border-radius: 10px;
+}
+.vhbl{
+    background-color: darkorange;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: bold;
+}
+#desc{
+    font-size: 12px;
+    color: rgb(112, 112, 112);
+    padding-top: 0px;
+}
+.sd:checked~.vhbl{
+    opacity: 1;
+    transition-duration: 3s;
+}
+.vhbl{
+    opacity:0;
+}
+.amigos{
+    border-radius: 50%;
+    width: 250px;
+    max-width: 400px;
+    margin: 10px auto;
+}
+.amigos:hover{
+    width: 100%;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+    box-shadow: 1px 1px 30px rgb(26, 122, 231);
+    transform: box-shadow 1s;
+}
+#to:hover{
+    box-shadow: 1px 1px 40px rgb(255, 255, 17);
+    
+}
+h3{
+    margin: 30px;
+    text-align: center;
+    font-size: 4vw;
+}
+video{
+    width:300px;
+    height: 300px;
+    margin: auto;
+    display: block;
+    background-color: rgb(0, 0, 15);
+}
+.vid{
+    background-color: rgb(0, 0, 15);
+    margin:20px 0px;
+    box-shadow:inset 1px 1px 30px black;
+   
+}
+section h2{
+    color:white;
+    text-align: center;
+    text-shadow: 0px 0px 3px white;
+}
+footer{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(23, 84, 250);
+}
