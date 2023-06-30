@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página principal</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+         *{
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Permanent Marker', cursive;
+         }
+         body{
+            height: 100vh;
+            background-color:rgb(5, 13, 92);
+         }
+         main{
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            padding: 10px;
+         }
+         main p{
+            padding: 5px;
+            text-indent: 5px;
+         }
+         #principal{
+            background: url('fundoflores.jpg') center center no-repeat fixed;
+            background-size: cover;
+            box-shadow: inset 1px 1px 10px black;
+         }
+        #principal p{
+            width: 60%;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.445);
+            margin-left: 10px;
+            font-size: 1.2em;
+            text-align: left;
+        }
+        p{
+            text-align: center;
+            padding: 10px;
+            font-size: 1.4em;
+        }
+        h1{
+            text-align: center;
+            font-size: 2.1em;
+            padding: 25px;
+        }
+        input{
+            background-color: white;
+            border: 1px solid rgb(5, 13, 92);
+            width: 150px;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        input:hover{
+            background-color: rgb(5, 13, 92);
+            color:white;
+            transition-duration: .5s;
+        }
+        #ult{
+            text-align: center;
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <p>
+                Oi tatai, então, não sou dessas coisas mas fiz um textão pra vc.
+            </p>
+        </section>
+        <section id="principal">
+            <p>Querida Thais,
+
+                Hoje é um dia verdadeiramente especial, pois estamos celebrando o aniversário de alguém que ilumina nossas vidas com sua presença radiante. Neste dia de alegria e comemoração, gostaria de expressar todo o meu amor e gratidão por você, minha irmã querida.</p>
+            <p>Desde o momento em que você entrou em nossas vidas, você trouxe uma dose extra de magia, felicidade e amor incondicional. Sua presença é como um raio de sol em dias nublados, enchendo nossos corações de calor e alegria. Você é uma pessoa extraordinária, e sou imensamente grato por tê-la como minha irmã.</p>
+            <p>Ao longo dos anos, temos compartilhado momentos inesquecíveis juntos. As risadas, as conversas profundas e até mesmo as lágrimas que dividimos criaram uma conexão especial entre nós. Você sempre esteve presente, apoiando-me em cada desafio e celebrando minhas conquistas. Sua presença é um presente valioso que eu aprecio todos os dias.</p>
+            <p>Você é alguém que vive com paixão e determinação, sempre buscando o melhor em tudo o que faz. Sua coragem e força inspiram-me a ser uma pessoa melhor a cada dia. Sua bondade e compaixão são incomparáveis, e seu coração generoso está sempre disposto a ajudar aqueles ao seu redor. Tenho a sorte de testemunhar sua incrível jornada de crescimento pessoal e ver como você impacta positivamente a vida das pessoas ao seu redor.</p>
+            <p>Hoje, no seu aniversário, quero desejar a você um dia repleto de alegria, amor e realizações. Que cada momento seja mágico e que seus sonhos se tornem realidade. Que você seja abençoada com saúde, felicidade e sucesso em todas as áreas da sua vida. Saiba que estou aqui para apoiá-la incondicionalmente, não importa o que aconteça.</p>
+            <p>Minha querida Thais, você é uma pessoa única e especial, e sou grato por cada momento que compartilhamos. Você traz luz e felicidade para todos ao seu redor, e eu tenho certeza de que seu futuro será brilhante e cheio de realizações extraordinárias.</p>
+            <p>Feliz aniversário, minha amada irmã! Que seu dia seja tão maravilhoso quanto você é. Que a vida lhe traga uma abundância de bênçãos e que você continue a inspirar e tocar os corações das pessoas com seu espírito radiante.</p>
+            <p>Com todo o meu amor e carinho,<br>
+
+                Wanderson, com uma ajudinha do chat GPT</p>
+        </section>
+        <section>
+            <h1>Faça uma escolha</h1>
+            <p>
+                <input type="button" value="Um abração" onclick="clicou()">
+                <input id="nao" type="button" onclick="clicou()" value="Um presente" onmouseenter="entrou()" onmouseleave="saiu()">
+            </p>
+        </section>
+        <section id="ult">
+            <h1>Só mais uma coisinha</h1>
+            <img src="eu.jpg" alt="">
+        </section>
+    </main>
+    <script>
+        function entrou(){
+            nao.value = 'Um abração'
+        }
+        function saiu(){
+            nao.value = 'Um presente'
+        }
+        function clicou(){
+            ult.style.display = 'block'
+        }
+    </script>
+</body>
+</html>

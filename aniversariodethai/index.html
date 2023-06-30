@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feliz aniversário</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <style>
+    <style> 
+    @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
         *{
             padding: 0px;
             margin: 0px;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Permanent Marker', cursive;
         }
+ 
         body{
-            background-color: rgb(5, 13, 92);
+            background: rgb(5, 13, 92) center center no-repeat fixed;
+            background-size: cover;
         }
         h1{
             text-align: center;
             font-weight: bold;
-            font-size: 2em;
-            margin: 20px;
+            font-size: 3em;
+            margin: 40% auto;
             color: white;
         }
         h1 span{
@@ -28,11 +31,12 @@
             text-align: center;
             width: 300px;
             height: 300px;
-            margin: auto;
+            margin: 21% auto;
             background-color: rgb(255, 255, 255);
             padding: 10px;
             border-radius: 30px;
             color: rgb(32, 32, 32);
+            display: none;
         }
         main p{
             padding: 10px;
@@ -48,7 +52,7 @@
             margin-top: 60px;
             font-weight: bold;
         }
-        main > input:hover{
+        main > a > input:hover{
             background-color: rgb(5, 13, 92);
             width: 50%;
             height: 50%;
@@ -66,11 +70,19 @@
     </style>
 </head>
 <body>
-    <h1><span class="material-symbols-outlined">favorite</span>Feliz aniversário tatai<span class="material-symbols-outlined">favorite</span></h1>
-    <main>
+    <h1 id="titprincipal" onclick="clicou()"><span class="material-symbols-outlined">favorite</span>Feliz aniversário tatai<span class="material-symbols-outlined">favorite</span></h1>
+    <main id="caixa">
         <p>Ta achando que é só isso?</p>
         <p>Aperta esse botão aqui embaixo</p>
-        <input type="button" value="Aqui mesmo">
+        <a href="principal.html" target="_self" rel="next"><input type="button" value="Aqui mesmo"></a>
     </main>
+    <script>
+        function clicou(){
+            let titulo = document.getElementById('titprincipal')
+            let cx = document.getElementById('caixa')
+            titulo.style.display = 'none'
+            cx.style.display = 'block'
+        }
+    </script>
 </body>
 </html>
